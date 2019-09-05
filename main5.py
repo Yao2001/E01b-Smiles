@@ -34,13 +34,13 @@ class Faces(arcade.Window):
         catch1_x,catch1_y = (face_x - 35,face_y + 40) 
         catch2_x,catch2_y = (face_x + 45,face_y + 40) 
 
-        arcade.draw_circle_filled(face_x, face_y, 100, open_color.yellow_3)
-        arcade.draw_circle_outline(face_x, face_y, 100, open_color.black,4)
-        arcade.draw_ellipse_filled(eye1_x,eye1_y,15,25,open_color.black)
-        arcade.draw_ellipse_filled(eye2_x,eye2_y,15,25,open_color.black)
-        arcade.draw_circle_filled(catch1_x,catch1_y,3,open_color.gray_2)
-        arcade.draw_circle_filled(catch2_x,catch2_y,3,open_color.gray_2)
-        arcade.draw_arc_outline(smile_x,smile_y,60,50,open_color.black,190,350,4)
+        arcade.draw_circle_filled(face_x, face_y, 100, open_color.yellow_3) (It creates the color of the circle.)
+        arcade.draw_circle_outline(face_x, face_y, 100, open_color.black,4) (It creates the shape of the circle.)
+        arcade.draw_ellipse_filled(eye1_x,eye1_y,15,25,open_color.black) (It creates the shape of the eye.)
+        arcade.draw_ellipse_filled(eye2_x,eye2_y,15,25,open_color.black) (It creates the shape of the eye.)
+        arcade.draw_circle_filled(catch1_x,catch1_y,3,open_color.gray_2) (It creates the shape of the spot on the eye.)
+        arcade.draw_circle_filled(catch2_x,catch2_y,3,open_color.gray_2) (It creates the shape of the spot on the eye.)
+        arcade.draw_arc_outline(smile_x,smile_y,60,50,open_color.black,190,350,4) (It creates the smile on the smile face.)
 
     def on_mouse_motion(self, x, y, dx, dy):
         """ Handle Mouse Motion """
